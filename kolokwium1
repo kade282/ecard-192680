@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<ul>
+<p id="p1">1</p>
+<p id="p2">2<p>
+<p id="p3">3<p>
+</ul>
+
+<script>
+const ulElement = document.querySelector('ul');
+const p1Element = document.querySelector('#p1');
+const p2Element = document.querySelector('#p2');
+const p3Element = document.querySelector('#p3');
+let goUp = function(){
+ulElement.insertBefore(p1Element, ulElement.firstChild);
+}
+let goUp1 = function(){
+ulElement.insertBefore(p2Element,ulElement.firstChild);
+}
+let goUp2 = function(){
+ulElement.insertBefore(p3Element,ulElement.firstChild);
+}
+p1Element.addEventListener('click',goUp);
+p2Element.addEventListener('click', goUp1);
+p3Element.addEventListener('click',goUp2);
+</script>
+</body>
+</html>
